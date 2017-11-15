@@ -1,16 +1,15 @@
 {
-  "name": "react-three-renderer",
-  "version": "3.2.3",
+  "name": "@alipay/react-three-renderer",
+  "version": "1.0.0",
   "description": "Render into a three.js canvas using React.",
   "main": "./lib/React3.js",
   "scripts": {
     "compile": "gulp babel",
-    "prepublish": "in-publish && npm test || not-in-publish",
     "doc": "gulp doc",
     "test": "gulp test",
     "tdd": "gulp tdd"
   },
-  "author": "Firtina \"toxicFork\" Ozbalikci",
+  "author": "maidu.sz",
   "keywords": [
     "react",
     "three.js"
@@ -85,7 +84,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/toxicFork/react-three-renderer.git"
+    "url": "git+https://github.com/koubei-fe/react-three-renderer.git"
   },
   "babel": {
     "presets": [
@@ -96,6 +95,9 @@
     "plugins": [
       "transform-decorators-legacy"
     ]
+  },
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
   },
   "bugs": {
     "url": "https://github.com/toxicFork/react-three-renderer/issues"
